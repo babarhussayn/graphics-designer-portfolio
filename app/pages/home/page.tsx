@@ -1,3 +1,4 @@
+import Images from "@/app/components/Images";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
@@ -5,9 +6,9 @@ import React from "react";
 const HomePage = () => {
   return (
     <>
-      <div className="w-full min-h-screen bg-[#f1e6c7]">
-        <div className="flex justify-center items-center ">
-          <div className="grid grid-cols-2 grid-rows-1 w-[1200px] items-center">
+      <div className="w-full min-h-screen ">
+        <div className="flex justify-center items-center flex-col">
+          <div className="grid grid-cols-2 grid-rows-1 w-[1400px] items-center">
             <div className="w-full mt-12">
               <div className="flex justify-center items-center flex-col gap-8 ">
                 <div className="w-full  flex justify-center items-center">
@@ -24,6 +25,7 @@ const HomePage = () => {
                 <div className="flex justify-start items-center ">
                   <h5>Email@gmail.com</h5>
                 </div>
+                <hr />
               </div>
             </div>
             <div className="w-full mt-12 flex justify-center items-center flex-col gap-12">
@@ -35,7 +37,7 @@ const HomePage = () => {
                     </div>
                   </div>
                   <div>
-                    <div>
+                    <div className="w-[600px]">
                       <p className="text-start">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Iste, culpa. Illo iure, eaque doloribus sit laudantium
@@ -51,9 +53,20 @@ const HomePage = () => {
                   </Button>
                 </div>
               </div>
-              <div className="flex justify-center items-center w-full">45</div>
+              <div className="flex justify-center items-center w-full">
+                <div>
+                  <div>
+                    <Images />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          {/* <div>
+            <div>
+              <Images />
+            </div>
+          </div> */}
         </div>
       </div>
     </>

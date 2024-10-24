@@ -25,7 +25,7 @@ const navbar: NavBar[] = [
 const Header = () => {
   return (
     <>
-      <div className="w-full flex justify-center items-center p-4 bg-[#f1e6c7]">
+      <div className="w-full flex justify-center items-center p-4 ">
         <div className="w-[50%] flex justify-center items-center ">
           <div className="w-full">
             <div>
@@ -43,6 +43,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <hr className="w-full  border-black " />
     </>
   );
 };
