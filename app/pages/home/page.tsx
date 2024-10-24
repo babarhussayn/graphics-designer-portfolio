@@ -6,9 +6,9 @@ import React from "react";
 const HomePage = () => {
   return (
     <>
-      <div className="w-full min-h-screen ">
+      <div className="w-full min-h-screen container mx-auto ">
         <div className="flex justify-center items-center flex-col">
-          <div className="grid grid-cols-2 grid-rows-1 w-[1400px] items-center">
+          <div className="grid grid-cols-2 grid-rows-1 justify-center items-center">
             <div className="w-full mt-12">
               <div className="flex justify-center items-center flex-col gap-8 ">
                 <div className="w-full  flex justify-center items-center">

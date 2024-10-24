@@ -39,13 +39,13 @@ const Content = () => {
   return (
     <>
       <div>
-        <div className="flex justify-center items-center mt-8">
+        <div className="flex justify-center items-center w-full mt-8">
           <div>
-            <div className="grid grid-cols-4 grid-rows-1 gap-4 ">
+            <div className="grid grid-cols-4 grid-rows-1 gap-2">
               {contents.map((items, index) => (
                 <div
                   key={index}
-                  className="flex justify-center items-center flex-col gap-8 shadow-lg p-6"
+                  className="flex justify-center items-center flex-col gap-6 shadow-lg p-6 bg-white rounded-xl"
                 >
                   <div>
                     <Image
