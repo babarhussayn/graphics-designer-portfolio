@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        oswald: [`var(--font-playfair)`],
+        oswald: [`var(--font-oswald)`],
+        nunito: [`var(--font-nunito)`],
       },
       colors: {
         background: "hsl(var(--background))",

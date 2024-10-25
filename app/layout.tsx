@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/Header";
 import { Oswald } from "next/font/google";
+import { Nunito } from "next/font/google";
 import Footer from "./components/Footer";
 
 const geistSans = localFont({
@@ -22,6 +23,12 @@ const oswald = Oswald({
   variable: "--font-playfair",
   weight: ["300", "400", "500", "600", "700"],
 });
+const nunito = Nunito({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-playfair",
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} ${nunito.variable} antialiased`}
       >
         <Header />
         {children}

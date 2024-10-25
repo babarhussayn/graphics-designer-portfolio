@@ -8,7 +8,7 @@ const Portfolio = () => {
         <div className="w-full">
           <div className=" flex justify-center items-center ">
             <div className=" ">
-              <h4 className="uppercase md:text-4xl text-3xl">
+              <h4 className="uppercase md:text-4xl text-3xl font-oswald">
                 I can help you with
               </h4>
             </div>

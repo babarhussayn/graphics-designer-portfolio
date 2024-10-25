@@ -29,13 +29,17 @@ const HomePage = () => {
                       <MdEmail size={20} />
                     </p>
 
-                    <h4 className="text-2xl">attiqaly72@gmail.com</h4>
+                    <h4 className="text-2xl font-oswald">
+                      attiqaly72@gmail.com
+                    </h4>
                   </div>
                   <div className="flex justify-start items-center gap-4 w-full">
                     <p className="">
                       <MdCall size={20} />
                     </p>
-                    <h4 className="text-center text-lg">0311-8986293</h4>
+                    <h4 className="text-center text-2xl font-oswald">
+                      0311-8986293
+                    </h4>
                   </div>
                 </div>
               </div>
@@ -45,14 +49,14 @@ const HomePage = () => {
                 <div className="w-full flex justify-center items-center flex-col gap-8">
                   <div className="w-full flex justify-start">
                     <div className="flex justify-center items-center">
-                      <h3 className="md:text-7xl text-2xl font-bold font-oswald">
+                      <h3 className="md:text-6xl text-2xl font-bold font-oswald">
                         Motion Graphics
                       </h3>
                     </div>
                   </div>
                   <div className="flex justify-center items-center">
                     <div className="md:w-[500px] w-[250px]">
-                      <p className="md:text-start text-center">
+                      <p className="md:text-start text-center font-nunito  text-lg">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Iste, culpa. Illo iure, eaque doloribus sit laudantium
                         exercitationem reiciendis error tempora ratione
@@ -63,7 +67,7 @@ const HomePage = () => {
                 </div>
                 <div className="mt-8 flex justify-center items-center md:block">
                   <a href="/pdf/atiq_ali.pdf" download>
-                    <Button className="hover:bg-[#8dbeeb] bg-[#2979FF] rounded-full shadow-xl text-white">
+                    <Button className="hover:bg-[#8dbeeb] bg-[#2979FF] rounded-full shadow-xl text-white font-oswald text-lg">
                       Download CV
                     </Button>
                   </a>

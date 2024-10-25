@@ -10,7 +10,11 @@ export function Gallery() {
     >
       <TabsList className="grid md:grid-cols-4 grid-cols-2 gap-4 m-4 ">
         {gallery.map((item, index) => (
-          <TabsTrigger value={item.value} key={index} className="">
+          <TabsTrigger
+            value={item.value}
+            key={index}
+            className="font-oswald font-bold text-md"
+          >
             {item.label}
           </TabsTrigger>
         ))}

@@ -57,12 +57,14 @@ const Content = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-extralight">
+                    <h3 className="text-2xl font-bold font-oswald">
                       {items.heading}
                     </h3>
                   </div>
                   <div>
-                    <p className="text-center">{items.description}</p>
+                    <p className="text-center font-oswald text-lg">
+                      {items.description}
+                    </p>
                   </div>
                 </div>
               ))}

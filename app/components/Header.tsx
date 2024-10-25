@@ -38,7 +38,9 @@ const Header = () => {
             {navbar.map((items, index) => (
               <div key={index}>
                 <div className="">
-                  <Link href={items.link}>{items.name}</Link>
+                  <Link href={items.link} className="text-lg font-oswald ">
+                    {items.name}
+                  </Link>
                 </div>
               </div>
             ))}
