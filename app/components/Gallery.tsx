@@ -8,7 +8,7 @@ export function Gallery() {
       defaultValue="ui/ux"
       className="md:w-[1400px] w-[600px] justify-center items-center"
     >
-      <TabsList className="grid md:grid-cols-4 grid-cols-2 gap-4 m-4">
+      <TabsList className="grid md:grid-cols-4 grid-cols-2 gap-4 m-4 ">
         {gallery.map((item, index) => (
           <TabsTrigger value={item.value} key={index} className="">
             {item.label}
