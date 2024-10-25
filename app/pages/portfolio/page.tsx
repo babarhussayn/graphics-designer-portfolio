@@ -4,7 +4,7 @@ import React from "react";
 const Portfolio = () => {
   return (
     <>
-      <section id="portfolio" className="w-full container mx-auto mb-14 ">
+      <section className="w-full container mx-auto mb-14 ">
         <div className="w-full">
           <div className=" flex justify-center items-center ">
             <div className=" ">
