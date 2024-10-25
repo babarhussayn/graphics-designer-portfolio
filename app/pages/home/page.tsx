@@ -9,7 +9,7 @@ const HomePage = () => {
     <>
       <div className="w-full min-h-screen container mx-auto mt-8">
         <div className="flex justify-center items-center flex-col">
-          <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-1 justify-center items-center flex-col md:flex-row">
+          <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-1 justify-center items-center flex-col md:flex-row gap-14">
             <div className="w-full mt-12">
               <div className="flex justify-center items-center flex-col gap-8 ">
                 <div className="w-full  flex justify-center items-center">
@@ -23,21 +23,19 @@ const HomePage = () => {
                     />
                   </div>
                 </div>
-                <div className="flex justify-center items-center flex-col gap-8">
-                  <div className="flex justify-center items-center gap-2 flex-col">
-                    <div>
-                      <p>
-                        <MdEmail />
-                      </p>
-                    </div>
-                    <h5>Email@gmail.com</h5>
-                  </div>
-                  <div className="flex justify-center items-center gap-2 flex-col">
-                    <p>
-                      <MdCall />
+                <div className="flex justify-center items-center flex-col gap-2">
+                  <div className="flex justify-center items-center gap-4 w-full">
+                    <p className="w-full">
+                      <MdEmail size={20} />
                     </p>
 
-                    <h4>12345678</h4>
+                    <h4 className="text-2xl">attiqaly72@gmail.com</h4>
+                  </div>
+                  <div className="flex justify-start items-center gap-4 w-full">
+                    <p className="">
+                      <MdCall size={20} />
+                    </p>
+                    <h4 className="text-center text-lg">0311-8986293</h4>
                   </div>
                 </div>
               </div>
@@ -45,7 +43,7 @@ const HomePage = () => {
             <div className="w-full mt-12 flex justify-center items-center flex-col gap-12">
               <div className="m-2 ">
                 <div className="w-full flex justify-center items-center flex-col gap-8">
-                  <div className="w-full">
+                  <div className="w-full flex justify-start">
                     <div className="flex justify-center items-center">
                       <h3 className="md:text-7xl text-2xl font-bold font-oswald">
                         Motion Graphics
@@ -64,17 +62,15 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="mt-8 flex justify-center items-center md:block">
-                  <Button className="bg-[#fefefe] text-black rounded-full shadow-xl">
-                    Download Cv
-                  </Button>
+                  <a href="/pdf/atiq_ali.pdf" download>
+                    <Button className="hover:bg-[#8dbeeb] bg-[#2979FF] rounded-full shadow-xl text-white">
+                      Download CV
+                    </Button>
+                  </a>
                 </div>
               </div>
-              <div className="flex justify-center items-center w-full flex-col md:flex-row">
-                <div>
-                  <div>
-                    <Images />
-                  </div>
-                </div>
+              <div className="flex  items-center w-full flex-col md:flex-row">
+                <Images />
               </div>
             </div>
           </div>

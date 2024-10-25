@@ -24,19 +24,17 @@ const images: ImagT[] = [
 
 const Images = () => {
   return (
-    <div>
-      <div className="md:flex justify-between items-center gap-2 hidden ">
-        {images.map((items, index) => (
-          <Image
-            src={items.src}
-            alt={items.alt}
-            key={index}
-            width={200}
-            height={250}
-            className="shadow-xl "
-          />
-        ))}
-      </div>
+    <div className="md:flex justify-center items-center gap-2 hidden ">
+      {images.map((items, index) => (
+        <Image
+          src={items.src}
+          alt={items.alt}
+          key={index}
+          width={150}
+          height={250}
+          className="object-contain aspect-square "
+        />
+      ))}
     </div>
   );
 };
