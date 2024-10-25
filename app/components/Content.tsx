@@ -10,25 +10,25 @@ interface ContentItem {
 
 const contents: ContentItem[] = [
   {
-    icon: "/images/responsive-design.gif",
+    icon: "/images/ui-ux.gif",
     heading: "UI/UX Design",
     description: `lorem ipsum dolor sit amet, consectetur adip`,
     alt: "icon-1",
   },
   {
-    icon: "/images/Graphic designing.gif",
+    icon: "/images/g-d.gif",
     heading: "Graphic Designing",
     description: `lorem ipsum dolor sit amet, consectetur adip`,
     alt: "icon-2",
   },
   {
-    icon: "/images/Web developement.gif",
+    icon: "/images/w-d.gif",
     heading: "Website Design",
     description: `lorem ipsum dolor sit amet, consectetur adip`,
     alt: "icon-3",
   },
   {
-    icon: "/images/video Editing.gif",
+    icon: "/images/v-e.gif",
     heading: "Video Editing",
     description: `lorem ipsum dolor sit amet, consectetur adip`,
     alt: "icon-4",
