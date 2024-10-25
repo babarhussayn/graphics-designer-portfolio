@@ -25,7 +25,7 @@ const images: ImagT[] = [
 const Images = () => {
   return (
     <div>
-      <div className="flex justify-between items-center gap-2 ">
+      <div className="md:flex justify-between items-center gap-2 hidden ">
         {images.map((items, index) => (
           <Image
             src={items.src}

@@ -41,7 +41,7 @@ const Content = () => {
       <div>
         <div className="flex justify-center items-center w-full mt-8">
           <div>
-            <div className="grid grid-cols-4 grid-rows-1 gap-2">
+            <div className="grid md:grid-cols-4 grid-cols-1 grid-rows-1 gap-2">
               {contents.map((items, index) => (
                 <div
                   key={index}

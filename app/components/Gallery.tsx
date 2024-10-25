@@ -1,129 +1,40 @@
-"use client";
-import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
-import { useState } from "react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Image from "next/image";
+import gallery from "@/gallery.json";
 
-const Gallery = () => {
-  const [activeTab, setActiveTab] = useState("ui/ux");
-
-  const data = [
-    {
-      label: "UI/UX Design",
-      value: "ui/ux",
-      images: [
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-        },
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-        },
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-        },
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-        },
-
-        // other images...
-      ],
-    },
-    {
-      label: "Graphic Designing",
-      value: "graphic",
-      images: [
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-
-        // other images...
-      ],
-    },
-    {
-      label: "Website Design",
-      value: "websitedesign",
-      images: [
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-        },
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-        },
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-        },
-        // other images...
-      ],
-    },
-    {
-      label: "Video Editing",
-      value: "video-editing",
-      images: [
-        {
-          imageLink:
-            "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        },
-        // other images...
-      ],
-    },
-  ];
-
+export function Gallery() {
   return (
-    <Tabs value={activeTab} onChange={setActiveTab}>
-      <TabsHeader>
-        {data.map(({ label, value }) => (
-          <Tab key={value} value={value} onClick={() => setActiveTab(value)}>
-            <div
-              className={`${
-                activeTab === value ? "bg-[#2979ff]" : "bg-gray-300"
-              } rounded-xl px-4 py-1`}
-            >
-              <h4 className="text-white cursor-pointer">{label}</h4>
-            </div>
-          </Tab>
+    <Tabs
+      defaultValue="ui/ux"
+      className="md:w-[1400px] w-[600px] justify-center items-center"
+    >
+      <TabsList className="grid md:grid-cols-4 grid-cols-2 gap-4 m-4">
+        {gallery.map((item, index) => (
+          <TabsTrigger value={item.value} key={index} className="">
+            {item.label}
+          </TabsTrigger>
         ))}
-      </TabsHeader>
-      <TabsBody className="grid grid-cols-1 gap-4">
-        {data.map(({ value, images }) => (
-          <TabPanel
-            key={value}
-            value={value}
-            className="grid grid-cols-2 gap-4 md:grid-cols-3"
-          >
-            {images.map(({ imageLink }, index) => (
-              <div key={index}>
-                <img
-                  className="h-40 w-full max-w-full rounded-lg object-cover object-center"
-                  src={imageLink}
-                  alt="image-photo"
-                />
-              </div>
+      </TabsList>
+      {gallery.map((item, index) => (
+        <TabsContent
+          value={item.value}
+          key={index}
+          className="flex justify-center items-center"
+        >
+          <div className="grid md:grid-cols-4  grid-cols-1 grid-rows-1 gap-4 justify-center items-center mt-8 ">
+            {item.images.map((src, imgIndex) => (
+              <Image
+                key={imgIndex}
+                src={src}
+                alt={`Image ${imgIndex + 1} of ${item.label}`}
+                width={400}
+                height={100}
+                className="rounded-xl flex justify-center items-center"
+              />
             ))}
-          </TabPanel>
-        ))}
-      </TabsBody>
+          </div>
+        </TabsContent>
+      ))}
     </Tabs>
   );
-};
-
-export default Gallery;
+}

@@ -26,13 +26,15 @@ const Header = () => {
   return (
     <>
       <div className="w-full flex justify-center items-center p-4 ">
-        <div className="w-[50%] flex justify-center items-center ">
+        <div className="md:w-[60%] gap-8 md:gap-2 flex justify-center items-center ">
           <div className="w-full">
             <div>
-              <h4>Logo</h4>
+              <Link href="/">
+                <h4>Logo</h4>
+              </Link>
             </div>
           </div>
-          <div className=" flex justify-between items-center w-full">
+          <div className=" flex justify-end gap-8 items-center w-full">
             {navbar.map((items, index) => (
               <div key={index}>
                 <div className="">

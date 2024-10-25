@@ -1,0 +1,31 @@
+[
+  {
+    "label": "UI/UX Design",
+    "value": "ui/ux",
+    "images": [
+      "/images/pic-1.jpg",
+
+      "/images/pic-2.jpg",
+
+      "/images/pic-3.jpg",
+
+      "/images/dp-man.jpg",
+      "/images/pic-1.jpg"
+    ]
+  },
+  {
+    "label": "Graphic Designing",
+    "value": "graphic",
+    "images": ["/images/pic-1.jpg", "/images/pic-3.jpg", "/images/pic-1.jpg"]
+  },
+  {
+    "label": "Website Design",
+    "value": "web",
+    "images": ["/images/pic-2.jpg", "/images/pic-3.jpg"]
+  },
+  {
+    "label": "Video Editing",
+    "value": "video",
+    "images": ["/images/pic-3.jpg", "/images/dp-man.jpg"]
+  }
+]
